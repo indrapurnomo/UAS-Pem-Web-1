@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITutorial - Contact</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">ITutorial</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tentang.html">Tentang Kami</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kursus.html">Kursus</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontak.html">Kontak</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="contact" class="py-5 bg-light text-center">
+        <div class="container">
+            <h2 class="animated-text">Kontak Kami</h2>
+            <p class="text-center animated-text">Kami ingin mendengar dari Anda! Silakan hubungi kami jika ada pertanyaan, komentar, atau masukan.</p>
+            <div class="text-center animated-text">
+                <h3>Informasi Kontak</h3>
+                <p><strong>Alamat:</strong> Jalan Gito-Gati No 25, Sleman, Yogyakarta</p>
+                <p><strong>Telepon:</strong> +62 123-456-6789</p>
+                <p><strong>Email:</strong> info@itutorial.com</p>
+                <p><strong>Jam Kerja:</strong> Senin - Jumat, 9:00 WIB - 17:00 WIB</p>
+                <h4>Ikuti kami di:</h4>
+                    <p>
+                        <a href="https://www.facebook.com/" target="_blank">                            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="24" height="24"> Facebook
+                            Facebook</a><br>
+                        <a href="https://www.twitter.com/" target="_blank">                            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" width="24" height="24"> Twitter
+                            Twitter</a><br>
+                        <a href="https://www.instagram.com/" target="_blank">                            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="24" height="24"> Instagram
+                            Instagram</a><br>
+                        <a href="https://www.linkedin.com/eduweb" target="_blank">                            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="24" height="24"> LinkedIn
+                            LinkedIn</a>
+                    </p>
+            </div>
+            <button id="contact-button" class="btn btn-primary">Hubungi Kami</button>
+        </div>
+    </section>
+
+    <footer class="py-3 bg-dark text-white text-center">
+        <p>© 2024 ITutorial. All rights reserved.</p>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Kontak Kami</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="Email Anda">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="message" rows="3" placeholder="Pesan Anda"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="javascripts/script.js"></script>
+</body>
+</html>
