@@ -1,8 +1,4 @@
-// Custom javaScript
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('Document is ready!');
-
-    // Smooth scroll untuk navigasi
+   // Smooth scroll untuk navigasi
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
