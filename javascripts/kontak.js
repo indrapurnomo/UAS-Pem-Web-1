@@ -1,23 +1,3 @@
-    // // Modal pop-up untuk form kontak
-    // const contactForm = document.getElementById('contact-form');
-    // const contactButton = document.getElementById('contact-button');
-    // const modal = document.getElementById('contactModal');
-    // const closeModal = document.getElementsByClassName('close')[0];
-
-    // contactButton.onclick = function() {
-    //     modal.style.display = "block";
-    // }
-
-    // closeModal.onclick = function() {
-    //     modal.style.display = "none";
-    // }
-
-    // window.onclick = function(event) {
-    //     if (event.target == modal) {
-    //         modal.style.display = "none";
-    //     }
-    // }
-
 // Modal pop-up untuk form kontak
 const contactForm = document.getElementById('contact-form');
 const contactButton = document.getElementById('contact-button');
@@ -48,6 +28,18 @@ window.onclick = function(event) {
 // Form submission handler
 contactForm.addEventListener("submit", function(event) {
     event.preventDefault();
-    contactModal.style.display = "none"; // Hide contact modal
-    successPopup.style.display = "block"; // Show success popup
+
+    // Validasi
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    if (email === "" || message === "") {
+        alert("Semua bidang harus diisi!");
+        return;
+    }
+
+    contactModal.style.display = "none"; 
+    successPopup.style.display = "block"; 
+
+    // bersihkan form
+    contactForm.reset();
 });
