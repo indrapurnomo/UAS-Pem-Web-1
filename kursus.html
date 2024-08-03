@@ -7,6 +7,14 @@
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .course-description {
+            display: none; /* Menyembunyikan deskripsi secara default */
+        }
+        .show-description .course-description {
+            display: block; /* Menampilkan deskripsi ketika tombol diklik */
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -33,8 +41,8 @@
     </nav>
 
     <!-- kursus -->
-    <section id="courses" class="py-5 text-center">
-        <div class="container">
+    <!-- <section id="courses" class="py-5 text-center">
+            <div class="container">
             <h2 class="animated-text">Kursus Kami</h2>
             <div class="row">
                 <div class="col-md-4">
@@ -43,7 +51,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Komputer</h5>
                             <p class="card-text">Belajar mengenai S/W komputer.</p>
-                            <a href="#" class="btn btn-primary">Lihat Selengkapnya</a>
+                            <a href="#" class="btn btn-primary" >Lihat Selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -68,9 +76,59 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </div> 
+    </section> -->
     
+    <section id="courses" class="py-5 text-center">
+        <div class="container">
+            <h2 class="animated-text">Kursus Kami</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/computer.jpg" class="card-img-top card-custom" alt="Kursus Komputer">
+                        <div class="card-body">
+                            <h5 class="card-title">Komputer</h5>
+                            <p class="card-text">Belajar mengenai S/W komputer.</p>
+                            <button class="btn btn-primary" onclick="toggleDescription('komputerDescription')">Lihat Selengkapnya</button>
+                            <button class="btn btn-secondary btn-minimize" onclick="toggleDescription('komputerDescription')">Minimize</button>
+                            <div id="komputerDescription" class="course-description">
+                                <p>Di kursus ini, Anda akan mempelajari berbagai aspek perangkat lunak komputer, termasuk sistem operasi, aplikasi produktivitas, dan perangkat lunak utilitas. Kami akan memberikan pemahaman mendalam tentang cara kerja perangkat lunak dan bagaimana memanfaatkannya secara efektif.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/desain-grafis.jpg" class="card-img-top card-custom" alt="Kursus Desain">
+                        <div class="card-body">
+                            <h5 class="card-title">Desain Grafis</h5>
+                            <p class="card-text">Belajar mengenai desain grafis.</p>
+                            <button class="btn btn-primary" onclick="toggleDescription('desainGrafisDescription')">Lihat Selengkapnya</button>
+                            <button class="btn btn-secondary btn-minimize" onclick="toggleDescription('desainGrafisDescription')">Minimize</button>
+                            <div id="desainGrafisDescription" class="course-description">
+                                <p>Kursus ini mencakup dasar-dasar desain grafis, termasuk penggunaan perangkat lunak desain, prinsip desain, dan teknik ilustrasi. Anda akan belajar cara membuat desain visual yang menarik dan efektif untuk berbagai media.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/programer.jpg" class="card-img-top card-custom" alt="Kursus Pemrograman">
+                        <div class="card-body">
+                            <h5 class="card-title">Pemrograman</h5>
+                            <p class="card-text">Belajar pemograman web.</p>
+                            <button class="btn btn-primary" onclick="toggleDescription('pemrogramanDescription')">Lihat Selengkapnya</button>
+                            <button class="btn btn-secondary btn-minimize" onclick="toggleDescription('pemrogramanDescription')">Minimize</button>
+                            <div id="pemrogramanDescription" class="course-description">
+                                <p>Kursus pemrograman ini meliputi berbagai bahasa pemrograman dan teknik pengembangan perangkat lunak. Anda akan belajar cara menulis kode, debugging, dan pengembangan aplikasi web dan desktop.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
     <!-- video  -->
     <div class="row mt-5">
         <div class="col-12">
@@ -183,5 +241,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="javascripts/script.js"></script>
+    <script src="javascripts/kursus.js"></script>
 </body>
 </html>
