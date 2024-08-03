@@ -40,5 +40,5 @@
             navbar.classList.remove("sticky");
         }
     }
-});
+
 
